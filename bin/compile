@@ -30,3 +30,6 @@ echo ${PATH}
 
 echo "Debug -> Tesseract binary path"
 echo ${TESSERACT_OCR_DIR}
+
+which tesseract
+which tesseract-ocr
