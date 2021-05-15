@@ -25,11 +25,5 @@ echo "export PATH=\"$TESSERACT_OCR_DIR/bin:\$PATH\"" > $ENVSCRIPT
 echo "export LD_LIBRARY_PATH=\"$TESSERACT_OCR_DIR/lib:\$LD_LIBRARY_PATH\"" >> $ENVSCRIPT
 echo "export TESSDATA_PREFIX=\"$TESSERACT_OCR_DIR/share/tessdata\"" >> $ENVSCRIPT
 
-echo "Debug -> Env path"
-echo ${PATH}
-
-echo "Debug -> Tesseract binary path"
-echo ${TESSERACT_OCR_DIR}
-
-which tesseract
-which tesseract-ocr
+echo "Debug Tesseract-OCR binary"
+tesseract-ocr -v
